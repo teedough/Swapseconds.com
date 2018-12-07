@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Swap Seconds</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"  href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet"  href="bootstrap-3.3.7-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="uploadImg.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      transition: 0.3s;
+      background:#555;
+      color: #fefefe;
+
+    }
+
+    /* Change nav bar element color*/ 
+    .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 150px;
+    color: #eee;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+    /*Change Element style on hover*/
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    
+    background-color: ;
+    color: #fefefe;
+    }
+
+
+    
+    .navbar-right {
+    float: right!important;
+    margin-right: 12%;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 1300px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+      border-right: 1px solid #eee;
+
+    }
+    .sidenavleft{
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+      border-right: 1px solid #eee;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: 100%;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+
+    #book_price{
+    color: #31B0D5;
+    }
+    .input-group1 .form-control {
+    margin-bottom: 20px;
+    }
+    .span.input-group .form-control {
+    position: relative;
+
+    margin-bottom: 20px;
+
+    }
+    .well {
+      background-color: #ffffff;
+    }
+    .input-group1 .form-control {
+    margin-bottom: 20px;
+    }
+    .input-group-login .form-control {
+    height: 30px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    }
+    .nav>li>a:hover,
+    .nav>li>a:focus {
+    text-decoration: none;
+    background-color: #337AB7;
+    color: #fefefe;
+   }
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000\9;
+    background-color: rgb(51, 122, 183);
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+.carousel-indicators .active {
+    width: 13px;
+    height: 13px;
+    margin: 0;
+    background-color: #555;
+}
+
+.pagination{
+    display:table;
+    margin:0 auto;
+}
+
+.form.navbar-form.navbar-right{
+  margin-right: 0px;
+}
+.row-timeline{
+  height: 12%;
+  padding-left: 12%;
+  padding-right: 10%;
+}
+.corusel-divider{
+  height: 5px;
+}
+.col-sm-8{
+  overflow-y: scroll; // Only add scroll to vertical column
+  position: fixed;
+}
+#viewMore{
+  padding-bottom: 10%;
+}
+---------------------uploadimageCSS------------------
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload{
+    width: 100%;
+}
+-----------------------
+
+  </style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="home.html">SwapSeconds</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+          <!--nothing yet-->
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li><a href="#">Nkuley Radebe</a></li>
+        <li><a href="#">Sign Out</a></li>
+
+      </ul>
+      <form action="" class="navbar-form navbar-right">
+
+        <div class="input-group-login">
+           <img src="img/icon-user.png" class="profile-image img-circle" height="30dp" width="30dp" alt="Avatar">
+
+        </div>
+
+      </form>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content" >
+
+  <!--LEFT SIDE : Search Stuff**************************************************************************************************************************************************************-->
+
+    <div class="col-sm-2 sidenavleft" > <!--LEFT SIDE : Search Stuff-->
+
+      <h4>Search</h4>
+
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Book..">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+    <h6 id="search_subtitle">Search using ISBN, Title .etc</h6>
+      
+
+      <ul class="nav nav-pills nav-stacked"> <!--from the database, remember?-->
+        <li class="active"><a href="#section1">Computer Sciences(5)</a></li>
+        <li><a href="#section2">Novels(21)</a></li>
+        <li><a href="#section3">Philosophy(12)</a></li>
+        <li><a href="#section3">Category 4</a></li>
+         <li><a href="#section2">Category 5</a></li>
+        <li><a href="#section3">Category 6</a></li>
+        <li><a href="#section3">Category 7</a></li>
+    </div>
+
+
+<!--MIDDLE: main page with adds***********************************************************************************************************************************************************************************************-->
+
+
+<div class="col-sm-8 text-left" style=" height: 100%;
+      overflow-y: auto;"> <!--MIDDLE: main page with adds-->
+
+
+    <h2>Edit Profile</h2>
+    <hr>
+
+<!--##############################################PERSONAL INFO#####################################################-->
+      <!-- PROFILE PIC COLUMN -->
+      <div class="col-md-3">
+          <div class="form-group">
+           <h5>Upload Image</h5>
+             <div class="input-group">
+                <span class="input-group-btn">
+                   <span class="btn btn-default btn-file">
+                    Browse… <input type="file" id="imgInp">
+                    </span>
+                </span>
+              <input type="text" class="form-control" readonly>
+             </div>
+            <img id='img-upload'/>
+          </div>
+      </div>
+
+      
+
+      <!-- EDIT FORM COLUMN -->
+      <div class="col-md-9 personal-info">
+        <div class="alert alert-info alert-dismissable">
+          <a class="panel-close close" data-dismiss="alert">×</a> 
+          <i class="fa fa-coffee"></i>
+          Hello There! <strong>.Welcome</strong>. Use this space to finish your editing profile.
+        </div>
+        <h3>Personal info</h3>
+        
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label class="col-lg-3 control-label">First name:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="Nkuley">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Last name:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="Radebe">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Phone Number:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Email:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="n.radebe@gmail.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Province:</label>
+            <div class="col-lg-8">
+              <div class="ui-select">
+                <select id="user_time_zone" class="form-control">
+                  <option value="Hawaii">Gauteng</option>
+                  <option value="Alaska">Freestate</option>
+                  <option value="Pacific Time (US &amp; Canada)">Limpopo</option>
+                  <option value="Arizona">Western Cape</option>
+                  <option value="Mountain Time (US &amp; Canada)">Mpumalanga</option>
+                  <option value="Central Time (US &amp; Canada)" selected="selected">KZN</option>
+                  <option value="Eastern Time (US &amp; Canada)">Eastern Cape </option>
+                  <option value="Indiana (East)">Northern Cape</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Username:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" value="nkuleyLovesPotatoes">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Password:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="password" value="11111122333">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Confirm password:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="password" value="11111122333">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label"></label>
+            <div class="col-md-8">
+              <input type="button" class="btn btn-primary" value="Save Changes">
+              <span></span>
+              <input type="reset" class="btn btn-default" value="Cancel">
+            </div>
+          </div>
+        </form>
+
+
+        <hr>
+        <div class="alert alert-info alert-dismissable">
+          <a class="panel-close close" data-dismiss="alert">×</a> 
+          <i class="fa fa-coffee"></i>
+           Update your Institution Details.
+        </div>
+        <h3>Institution</h3>
+
+        <form class="form-horizontal" role="form">
+
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Instituion:</label>
+            <div class="col-lg-8">
+              <div class="ui-select">
+                <select id="user_time_zone" class="form-control">
+                  <option value="Hawaii">North West University</option>
+                  <option value="Alaska">University Of Johannesburg</option>
+                  <option value="Pacific Time (US &amp; Canada)">University of Limpopo</option>
+                  <option value="Arizona">Cape College</option>
+                  <option value="Mountain Time (US &amp; Canada)">Sedibeng College</option>
+                  <option value="Central Time (US &amp; Canada)" selected="selected">KZN</option>
+                  <option value="Eastern Time (US &amp; Canada)">Eastern Cape </option>
+                  <option value="Indiana (East)">Northern Cape</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Campus:</label>
+            <div class="col-lg-8">
+              <div class="ui-select">
+                <select id="user_time_zone" class="form-control">
+                  <option value="Hawaii">Vaal</option>
+                  <option value="Alaska">Mafikeng</option>
+                  <option value="Pacific Time (US &amp; Canada)">Venda</option>
+                  <option value="Arizona">Potchestroom</option>
+                  <option value="Mountain Time (US &amp; Canada)">Sedibeng</option>
+                  <option value="Central Time (US &amp; Canada)" selected="selected">KZN</option>
+                  <option value="Eastern Time (US &amp; Canada)">Eastern Cape </option>
+                  <option value="Indiana (East)">Northern Cape</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+        </form>
+
+      <!--##############################################CATEGORIES#####################################################-->
+
+    <div class="col-md-9 personal-info">
+
+     <h3>Categories</h3>
+
+
+  </div>
+
+  <div class="col-md-12 interests-row">
+        <div class="alert alert-info alert-dismissable">
+          <a class="panel-close close" data-dismiss="alert">×</a> 
+          <i class="fa fa-coffee"></i>
+          This is are <strong>Categories</strong>. You Would Like To See On Your Feed.
+        </div>
+
+       <div class="col-md-3 "> 
+        <strong>Categories</strong>
+       </div>
+
+       <div class="col-md-4 "> 
+
+
+        
+                  <fieldset>
+
+                    <div class="checkbox checkbox-circle">
+                        <input id="checkbox7" type="checkbox">
+                        <label for="checkbox7">
+                            Economics
+                        </label>
+                    </div>
+
+                    <div class="checkbox checkbox-circle">
+                        <input id="checkbox7" type="checkbox">
+                        <label for="checkbox7">
+                            Physics
+                        </label>
+                    </div>
+
+                   <div class="checkbox checkbox-circle">
+                        <input id="checkbox7" type="checkbox">
+                        <label for="checkbox7">
+                            Children's
+                        </label>
+                    </div>
+
+                    <div class="checkbox checkbox-circle">
+                        <input id="checkbox7" type="checkbox">
+                        <label for="checkbox7">
+                            Law
+                        </label>
+                    </div>
+
+                    <div class="checkbox checkbox-circle">
+                        <input id="checkbox7" type="checkbox">
+                        <label for="checkbox7">
+                            Biology
+                        </label>
+                    </div>
+
+                    <div class="checkbox checkbox-circle">
+                        <input id="checkbox7" type="checkbox">
+                        <label for="checkbox7">
+                            Philosophy
+                        </label>
+                    </div>
+                     <div class="checkbox checkbox-circle">
+                        <input id="checkbox7" type="checkbox">
+                        <label for="checkbox7">
+                            History
+                        </label>
+                    </div>
+
+                    
+                </fieldset>
+
+       </div>
+
+              <div class="col-md-4 "> 
+        
+                  <fieldset>
+
+                    <div class="checkbox checkbox-circle">
+                        <input id="checkbox7" type="checkbox">
+                        <label for="checkbox7">
+                            Accounting
+                        </label>
+                    </div>
+
+                    <div class="checkbox checkbox-circle">
+                        <input id="checkbox7" type="checkbox">
+                        <label for="checkbox7">
+                            Computer Sciences
+                        </label>
+                    </div>
+
+                   <div class="checkbox checkbox-circle">
+                        <input id="checkbox7" type="checkbox">
+                        <label for="checkbox7">
+                            Education
+                        </label>
+                    </div>
+
+                    <div class="checkbox checkbox-circle">
+                        <input id="checkbox7" type="checkbox">
+                        <label for="checkbox7">
+                            Novels
+                        </label>
+                    </div>
+                    <div class="checkbox checkbox-circle">
+                        <input id="checkbox7" type="checkbox">
+                        <label for="checkbox7">
+                            Fiction
+                        </label>
+                    </div>
+                     <div class="checkbox checkbox-circle">
+                        <input id="checkbox7" type="checkbox">
+                        <label for="checkbox7">
+                            Poems
+                        </label>
+                    </div>
+
+                    <div class="checkbox checkbox-circle">
+                        <input id="checkbox7" type="checkbox">
+                        <label for="checkbox7">
+                            Mathemaitcs
+                        </label>
+                    </div>
+
+                    <div class="checkbox checkbox-circle">
+                        <input id="checkbox7" type="checkbox">
+                        <label for="checkbox7">
+                            Other
+                        </label>
+                    </div>
+
+                    
+                </fieldset>
+       </div>
+
+       
+  </div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+<!--RIGHT: --CREATE  AN ACCOUNT***************************************************************************************************************************************************-->
+    <div class="col-sm-2 sidenav"> <!--RIGHT: --create and account-->
+      <div class="well">
+        <p>Welcome!!</p>
+      </div>
+      <div class="well">
+        <p>Quick Links</p><br>
+              <ul class="nav nav-pills nav-stacked"> <!--from the database, remember?-->
+               
+              <li ><a href="post_ad.html">Post A New Ad</a></li>
+              <li><a href="#section2">View My Posts(0)</a></li>
+              <li ><a href="#section1">Messages(0)</a></li>
+             <li><a href="#section3">Recent Posts</a></li>
+         </div>
+          <div class="well">
+        <p>Advert</p><br>
+              <ul class="nav nav-pills nav-stacked"> <!--from the database, remember?-->
+        <li class="active"><a href="#section1">Reviews</a></li>
+        <li><a href="#section2">View My Posts</a></li>
+        <li><a href="#section3">Recent Posts</a></li>
+    </div>
+
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>copyright @ swapseconds.com</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Swap Seconds</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"  href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet"  href="bootstrap-3.3.7-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="uploadImg.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      transition: 0.3s;
+      background:#555;
+      color: #fefefe;
+
+    }
+
+    /* Change nav bar element color*/ 
+    .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 150px;
+    color: #eee;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+    /*Change Element style on hover*/
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    
+    background-color: ;
+    color: #fefefe;
+    }
+
+
+    
+    .navbar-right {
+    float: right!important;
+    margin-right: 12%;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 1300px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      height: 100%;
+      border-right: 1px solid #eee;
+
+    }
+    .sidenavleft{
+      padding-top: 20px;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: 100%;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+
+    #book_price{
+    color: #31B0D5;
+    }
+    .input-group1 .form-control {
+    margin-bottom: 20px;
+    }
+    .span.input-group .form-control {
+    position: relative;
+
+    margin-bottom: 20px;
+
+    }
+    .well {
+      background-color: #ffffff;
+    }
+    .input-group1 .form-control {
+    margin-bottom: 20px;
+    }
+    .input-group-login .form-control {
+    height: 30px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    }
+    .nav>li>a:hover,
+    .nav>li>a:focus {
+    text-decoration: none;
+    background-color: #337AB7;
+    color: #fefefe;
+   }
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000\9;
+    background-color: rgb(51, 122, 183);
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+.carousel-indicators .active {
+    width: 13px;
+    height: 13px;
+    margin: 0;
+    background-color: #555;
+}
+
+.pagination{
+    display:table;
+    margin:0 auto;
+}
+
+.form.navbar-form.navbar-right{
+  margin-right: 0px;
+}
+.row-timeline{
+  height: 12%;
+  padding-left: 12%;
+  padding-right: 10%;
+}
+.corusel-divider{
+  height: 5px;
+}
+.col-sm-8{
+  overflow-y: scroll; // Only add scroll to vertical column
+  position: fixed;
+}
+#viewMore{
+  padding-bottom: 10%;
+}
+#img-upload{
+    width: 100%;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="home.html">SwapSeconds</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+          <!--nothing yet-->
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li><a href="editprofile.html">Nkuley Radebe</a></li>
+        <li><a href="#">Sign Out</a></li>
+
+      </ul>
+      <form action="" class="navbar-form navbar-right">
+
+        <div class="input-group-login">
+           <img src="img/icon-user.png" class="profile-image img-circle" height="30dp" width="30dp" alt="Avatar">
+
+        </div>
+
+      </form>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content" >
+
+  <!--LEFT SIDE : Search Stuff**************************************************************************************************************************************************************-->
+
+    <div class="col-sm-2 sidenavleft" > <!--LEFT SIDE : Search Stuff-->
+    </div>
+
+
+<!--MIDDLE: main page with adds***********************************************************************************************************************************************************************************************-->
+
+
+<div class="col-sm-8 text-left" style=" height: 100%;
+      overflow-y: auto;"> <!--MIDDLE: main page with adds-->
+	  <br>
+      <h4><small>SUBMIT AN AD</small></h4>
+      <hr>
+       <div class="alert alert-info alert-dismissable">
+          <a class="panel-close close" data-dismiss="alert">×</a> 
+          <i class="fa fa-coffee"></i>
+          Fill InTo Complete Your Ad, Click  <strong>Submit</strong>  When Done.
+        </div>
+
+       <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Book Name:</label>
+            <div class="col-lg-5">
+              <input class="form-control" type="text" value="The Alchemist">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Author:</label>
+            <div class="col-lg-5">
+              <input class="form-control" type="text" value="Poulo Coellho">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Edition:</label>
+            <div class="col-lg-4">
+              <input class="form-control" type="text" value="Poulo Coellho">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-lg-3 control-label">ISBN:</label>
+            <div class="col-lg-3">
+              <input class="form-control" type="text" value="Poulo Coellho">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Category:</label>
+            <div class="col-lg-2">
+              <div class="ui-select">
+                <select id="user_time_zone" class="form-control">
+                  <option value="Hawaii">Fin Accounting</option>
+                  <option value="Alaska">Economics</option>
+                  <option value="Pacific Time (US &amp; Canada)">Comp Sci</option>
+                  <option value="Arizona">Arts</option>
+                  <option value="Mountain Time (US &amp; Canada)">IT</option>
+                  <option value="Central Time (US &amp; Canada)" selected="selected">Philosophy</option>
+                  <option value="Eastern Time (US &amp; Canada)">blah blah </option>
+                  <option value="Indiana (East)">blah blah</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+           <div class="form-group">
+            <label class="col-lg-3 control-label">Decribe your Item:</label>
+            <div class="col-lg-5">
+              <input class="form-control" type="text" rows="3" value="Poulo Coellho">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Price: R.</label>
+            <div class="col-lg-2">
+              <input class="form-control" type="text" value="R.">
+            </div>
+          </div>
+
+
+      <!-- BOOK PIC  -->
+
+          <div class="form-group">
+          <label class="col-lg-3 control-label">Upload Picture: </label>
+      	<div class="col-md-3">
+           <h5>Upload Image</h5>
+             <div class="input-group">
+                <span class="input-group-btn">
+                   <span class="btn btn-default btn-file">
+                    Browse… <input type="file" id="imgInp">
+                    </span>
+                </span>
+              <input type="text" class="form-control" readonly>
+             </div>
+            <img id='img-upload'/>
+
+      	</div>
+          </div>
+
+
+          <div class="form-group">
+            <label class="col-lg-3 control-label"></label>
+            <div class="col-lg-2">
+              <button type="button" class="btn btn-primary btn-md">Submit</button>
+            </div>
+          </div>
+
+
+        </form>
+
+
+
+
+</div>
+
+
+<!--RIGHT: --CREATE  AN ACCOUNT***************************************************************************************************************************************************-->
+    <div class="col-sm-2 sidenav"> <!--RIGHT: --create and account--></div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>copyright @ swapseconds.com</p>
+</footer>
+
+</body>
+</html>

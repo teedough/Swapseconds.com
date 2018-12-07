@@ -1,0 +1,4 @@
+category click
+add post
+profile update
+check out
